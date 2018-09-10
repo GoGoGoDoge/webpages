@@ -1,13 +1,17 @@
 import React, {Component} from 'react';
-import { Button } from 'semantic-ui-react'
-import logo from './logo.svg';
+import StickyLayout from './layouts/StickyLayout';
+import HomePage from './pages/Homepage';
+import CloudGallery from './pages/CloudGallery';
 import './App.css';
 
 class App extends Component {
   render() {
+    // return <CloudGallery />;
     return (
       <div className="App">
-        <Button>Finally we kick off</Button>
+        <StickyLayout>
+          <HomePage />
+        </StickyLayout>
       </div>
     );
   }
